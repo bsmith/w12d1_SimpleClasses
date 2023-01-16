@@ -13,6 +13,7 @@ public class Printer {
             return false;
         sheetsOfPaperLeft -= sheetsToUse;
         tonerVolume -= sheetsToUse;
+        System.out.printf("Printed %d pages%n", sheetsToUse);
         return true;
     }
 
