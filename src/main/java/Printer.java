@@ -12,6 +12,7 @@ public class Printer {
         if (sheetsToUse > sheetsOfPaperLeft)
             return false;
         sheetsOfPaperLeft -= sheetsToUse;
+        tonerVolume -= sheetsToUse;
         return true;
     }
 

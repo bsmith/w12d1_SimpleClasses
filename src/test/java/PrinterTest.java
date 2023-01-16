@@ -24,4 +24,10 @@ public class PrinterTest {
         assertFalse(retval);
         assertEquals(250, thePrinter.getSheetsOfPaperLeft());
     }
+
+    @Test
+    public void printingReducesToner() {
+        assertTrue(thePrinter.print(100, 1));
+        assertEquals(900, thePrinter.getTonerVolume());
+    }
 }
